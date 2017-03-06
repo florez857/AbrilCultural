@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.android.abrilcultural.MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_marginTop="160dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="top|center"
+            android:layout_height="20dp"/>
+
+        <ImageButton
+
+            android:id="@+id/left_nav"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|left"
+            android:layout_marginTop="71dp"
+            android:alpha="0" />
+
+        <ImageButton
+            android:id="@+id/right_nav"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="71dp"
+            android:layout_gravity="top|right"
+            android:alpha="0" />
+
+    </FrameLayout>
+
+</RelativeLayout>
