@@ -11,66 +11,107 @@
         app:cardCornerRadius="5dp">
 
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
+            android:orientation="vertical"
             android:layout_height="match_parent">
 
 
             <TextView
-                android:text="TextView"
+                android:text="Exposicion"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:textColor="#33B5E5"
+                android:textStyle="normal|bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:text="Las calles de salta a traves del tiempo"
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="11dp"
+                android:layout_marginTop="3dp"
                 android:id="@+id/titulo"
                 android:textSize="20sp"
                 android:fontFamily="sans-serif"
                 android:textStyle="normal|bold" />
 
+            <LinearLayout
+                android:background="@android:color/darker_gray"
+               android:layout_margin="5dp"
+                android:id="@+id/lineaHorizontal3"
+                android:layout_height="2dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/fecha"
+                android:layout_width="match_parent">
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/reloj24"
+                app:srcCompat="@drawable/ic_hora"
                 android:id="@+id/reloj"
                 android:layout_margin="10dp"
                 android:scaleType="center"
                 android:layout_below="@id/titulo"/>
 
+        <TextView
+            android:gravity="center_vertical"
+            android:text="inicio 12:00 finaliza 14:00"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:id="@+id/fecha"
+            />
+        </LinearLayout>
+
+            <LinearLayout
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:id="@+id/lineaHorizontal2"
+                android:layout_height="2dp"
+
+                android:orientation="horizontal"
+                android:layout_below="@+id/fecha"
+                android:layout_width="match_parent">
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                app:srcCompat="@drawable/ic_posicion"
+                app:srcCompat="@drawable/ic_lugar"
                 android:id="@+id/posicion"
                 android:scaleType="center"
                 android:layout_below="@id/reloj"/>
 
             <TextView
-                android:text="TextView"
+                android:text="calle san martin 4400, lsata capita , tearo el huerto sala numero 2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:id="@+id/localizacion"
                 android:gravity="center_vertical"
-                android:layout_toRightOf="@id/posicion"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignTop="@+id/posicion"
-                android:layout_alignBottom="@+id/posicion" />
+                android:layout_margin="10dp"
+                />
 
-            <TextView
-                android:gravity="center_vertical"
-                android:text="TextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/fecha"
-                android:layout_toRightOf="@id/reloj"
-                android:layout_alignTop="@+id/reloj"
-                android:layout_alignBottom="@id/reloj"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+           </LinearLayout>
 
-        </RelativeLayout>
+        </LinearLayout>
 
-</android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
