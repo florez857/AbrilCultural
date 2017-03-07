@@ -43,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
-            android:id="@+id/textView"
+            android:id="@+id/dia_semana"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="@color/cardview_light_background"
             android:textSize="35sp"
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_marginTop="56dp"
-            android:id="@+id/textView7"
+            android:id="@+id/dia_mes"
             android:textSize="30sp"
             android:textStyle="normal|bold"
             android:textColor="#33B5E5"
@@ -73,11 +73,11 @@
             android:text="Abril"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView7"
+            android:layout_below="@id/dia_mes"
             android:layout_marginTop="5dp"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="20dp"
-            android:id="@+id/textView6"
+            android:id="@+id/mes"
             android:textSize="25sp"
             android:textColor="@color/cardview_light_background"
             android:fontFamily="sans-serif-medium" />
@@ -106,6 +106,7 @@
             android:layout_marginEnd="17dp"
             android:layout_marginTop="71dp"
             android:id="@+id/imageView12" />
+
 
 
 

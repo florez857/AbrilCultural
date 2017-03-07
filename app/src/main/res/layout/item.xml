@@ -41,34 +41,31 @@
                android:text="Exposicion"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:id="@+id/textView5"
+               android:id="@+id/detalle_exposicion"
                android:textSize="18sp"
                android:textColor="#33b5e5"
                android:textStyle="normal|bold" />
 
-           <TextView
-            android:text="Las Calles de salta a traves del tiempo "
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            android:fontFamily="sans-serif"
-            android:typeface="sans"
-            android:textSize="40sp"
-            android:gravity="center"
-            android:textAllCaps="false"
-            android:textStyle="normal|bold" />
+            <TextView
+             android:text="Las Calles de salta a traves del tiempo "
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/detalle_titulo"
+             android:fontFamily="sans-serif"
+             android:typeface="sans"
+             android:textSize="40sp"
+             android:gravity="center"
+             android:textAllCaps="false"
+             android:textStyle="normal|bold" />
 
 
-
-
-           <TextView
+            <TextView
                android:text="Fotografias de las principales calles y avenidas de nuestra ciudad en distintas epocas, permitiendo a los visitantes conocer la historia y evolucion de la ciudad de salta
                "
                android:layout_margin="10dp"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:layout_below="@id/textView2"
-               android:id="@+id/titulo"
+               android:id="@+id/detalle_descripcion"
                android:textSize="16sp" />
 
            <LinearLayout
@@ -110,7 +107,7 @@
                    android:text="jueves 23 de marzo inicia 12:00 finaliza 13:00 "
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:id="@+id/textView3"
+                   android:id="@+id/detalle_fecha"
                    android:layout_gravity="center"
                    android:layout_marginLeft="10dp"
                    android:gravity="center_vertical"
@@ -122,7 +119,6 @@
                android:id="@+id/lineaHorizontal"
                android:layout_height="2dp"
                android:orientation="horizontal"
-               android:layout_below="@+id/fecha"
                android:layout_width="match_parent">
            </LinearLayout>
 
@@ -131,7 +127,6 @@
                android:orientation="horizontal"
                android:layout_width="match_parent"
                android:layout_margin="10dp"
-               android:layout_below="@+id/titulo"
                android:layout_height="wrap_content"
                android:id="@+id/organizar"
                android:layout_centerHorizontal="true">
@@ -145,7 +140,7 @@
                    <ImageView
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
-                       app:srcCompat="@drawable/ic_action_name"
+                       app:srcCompat="@drawable/ic_organiza"
                        android:id="@+id/icon_organiza" />
 
                    <TextView
@@ -166,7 +161,7 @@
                    android:layout_height="wrap_content"
                    android:layout_marginLeft="10dp"
                    android:layout_gravity="center"
-                   android:id="@+id/organiza"
+                   android:id="@+id/detalle_organiza"
                    android:gravity="center_vertical"
                    android:textSize="16sp" />
            </LinearLayout>
@@ -176,7 +171,6 @@
                android:id="@+id/lineaHorizontal3"
                android:layout_height="2dp"
                android:orientation="horizontal"
-               android:layout_below="@+id/fecha"
                android:layout_width="match_parent">
            </LinearLayout>
 
@@ -184,7 +178,6 @@
                android:orientation="horizontal"
                android:layout_width="match_parent"
                android:layout_margin="10dp"
-               android:layout_below="@+id/titulo"
                android:layout_height="wrap_content"
 
                android:id="@+id/posicion"
@@ -219,7 +212,7 @@
                    android:text="Teatro de huerto ,san marti 2200 ghjghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhgggggggggggggggggggggggggggggggfsalta Capital"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:id="@+id/lugar"
+                   android:id="@+id/detalle_lugar"
                    android:layout_marginLeft="10dp"
                    android:layout_gravity="center"
                    android:gravity="center_vertical"
