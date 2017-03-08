@@ -20,7 +20,7 @@ public class spalshScreen extends Activity {
                 startActivity(intent);
                 finish();
             }
-        },4000);
+        },3000);
 
     }
 }

@@ -15,7 +15,7 @@ public class Detalle extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.item);
         toolbar=(Toolbar)findViewById(R.id.toolbar);
-        toolbar.setTitle("Cultura salta ");
+        toolbar.setTitle("Abril Cultural Salta 2017");
         tipo=(TextView)findViewById(R.id.detalle_exposicion);
         titulo=(TextView)findViewById(R.id.detalle_titulo);
         descripcion=(TextView)findViewById(R.id.detalle_descripcion);
@@ -32,7 +32,6 @@ public class Detalle extends AppCompatActivity {
         //toolbar.setNavigationIcon(R.mipmap.ic_launcher);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setLogo(R.mipmap.ic_launcher);
 
 
 

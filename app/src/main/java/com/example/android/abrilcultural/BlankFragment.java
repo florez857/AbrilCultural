@@ -51,16 +51,10 @@ public class BlankFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view =inflater.inflate(R.layout.fragment_blank, container, false);
-        DiaSemana=(TextView)view.findViewById(R.id.dia_semana);
-        dia=(TextView)view.findViewById(R.id.dia_mes);
-        mes=(TextView)view.findViewById(R.id.mes);
+
         recyclerView = (RecyclerView) view.findViewById(R.id.recycler);
         list=new lista();
         listaEventos=list.lista(page);
-        dia.setText(listaEventos.get(0).getDiaMes());
-        DiaSemana.setText(listaEventos.get(0).getDiaSemana());
-        mes.setText(listaEventos.get(0).getMes());
-
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         adaptador = new AdaptadorRecylcer(getActivity(),listaEventos);
         recyclerView.setAdapter(adaptador);
